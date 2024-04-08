@@ -2,9 +2,9 @@ name: Build K8S Utils
 
 on:
   push:
-    paths:
-      - ./k8s-utils.containerfile
-
+    branches:
+      - main
+      
 env:
   registry: ghcr.io/filipevrevez
   image-name: ${{ github.event.repository.name }}
