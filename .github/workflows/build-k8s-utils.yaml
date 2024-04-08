@@ -68,6 +68,7 @@ jobs:
         with:
           registry: ghcr.io/comparaja
           username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📤 Build and push
         id: docker_build
