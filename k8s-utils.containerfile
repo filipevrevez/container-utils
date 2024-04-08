@@ -8,3 +8,5 @@ LABEL org.opencontainers.image.url="https://github.com/filipevrevez/k8s-utils"
 RUN apk add --no-cache curl jq unzip
 
 CMD ["/bin/sh"]
+
+# Build: docker build -t k8s-utils -f k8s-utils.containerfile .
