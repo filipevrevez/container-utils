@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      
+
 env:
   registry: ghcr.io/filipevrevez
   image-name: ${{ github.event.repository.name }}
@@ -60,7 +60,7 @@ jobs:
       - name: 🐬 Docker lint
         uses: hadolint/hadolint-action@v3.1.0
         with:
-          dockerfile: ${{ inputs.dockerfile-location }}
+          dockerfile: k8s-utils.containerfile
 
       - name: 🪵 Login to GHCR
         uses: docker/login-action@v3
